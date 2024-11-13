@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lenovo store
+
+    </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="start()">
+    <!-- Thanh điều hướng -->
+    <header>
+        <div class="navbar">
+            <img class="logo"  src="img/images.png" width="150px" height="50px" alt="">
+            
+            <nav>
+                <ul>
+                    <li><a href="#home">Trang chủ</a></li>
+                    <li><a href="#products">Danh mục</a></li>
+                    <li><a href="#products">Sản phẩm</a></li>
+                    <li><a href="#contact">Liên hệ</a></li>
+                    <li><a href="#account">Tài khoản</a></li>
+                </ul>
+            </nav>
+            <div class="search-bar">
+                <input type="text" placeholder="Tìm kiếm laptop...">
+                <button>Tìm kiếm</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Banner -->
+        
+        <img id="img1" src="img/0.jpg" width="1200px" height="450px" alt="">
+    <script src="slide.js"></script>
+
+    <!-- Bộ lọc sản phẩm -->
+    <section class="filters">
+        <h2>Lọc sản phẩm</h2>
+        <br>
+        <div class="filter-options">
+            <select>
+                <option value="all">Tất cả</option>
+                <option value="gaming">Laptop gaming</option>
+                <option value="office">Laptop văn phòng</option>
+                <option value="macbook">MacBook</option>
+            </select>
+            <select>
+                <option value="low-high">Giá từ thấp đến cao</option>
+                <option value="high-low">Giá từ cao đến thấp</option>
+            </select>
+            <select>
+                <option value="newest">Mới nhất</option>
+                <option value="bestseller">Bán chạy</option>
+            </select>
+        </div>
+    </section>
+
+    <!-- Danh sách sản phẩm -->
+    <section id="products" class="product-list">
+        <h2>Sản phẩm nổi bật</h2>
+        <div class="products-grid">
+            <div class="product">
+                <img src="img/68889a97-51bc-4602-9b45-fd5484b4c325.jpg" alt="Laptop 1">
+                <h3>Laptop A</h3>
+                <p>Giá: 20,000,000 VND</p>
+                <button>Mua ngay</button>
+            </div>
+            <div class="product">
+                <img src="img/68889a97-51bc-4602-9b45-fd5484b4c325.jpg" alt="Laptop 2">
+                <h3>Laptop B</h3>
+                <p>Giá: 25,000,000 VND</p>
+                <button>Mua ngay</button>
+            </div>
+            <div class="product">
+                <img src="img/68889a97-51bc-4602-9b45-fd5484b4c325.jpg" alt="Laptop 3">
+                <h3>Laptop C</h3>
+                <p>Giá: 18,500,000 VND</p>
+                <button>Mua ngay</button>
+            </div><!-- Thêm các sản phẩm khác tại đây -->
+        </div>
+        <!-- Phân trang -->
+        <div class="pagination">
+            <button>Trước</button>
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>Tiếp</button>
+        </div>
+    </section>
+
+    <!-- Phần chân trang -->
+    <footer>
+        <div class="footer-content">
+            <div class="about">
+                <h3>Về chúng tôi</h3>
+                <p>Laptop Store cung cấp những sản phẩm công nghệ mới nhất và tốt nhất dành cho bạn.</p>
+            </div>
+            <div class="contact">
+                <h3>Liên hệ</h3>
+                <p>Email: support@lenovostore.com</p>
+                <p>SĐT: 0123 456 789</p>
+            </div>
+            <div class="social">
+                <h3>Theo dõi chúng tôi</h3>
+                <p>Facebook | Twitter | Instagram</p>
+            </div>
+        </div>
+        <p>&copy; 2024 Lenovo Store. All rights reserved.</p>
+    </footer>
+
+    <script src="java.js"></script>
+</body>
+</html>
