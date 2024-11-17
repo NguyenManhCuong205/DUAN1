@@ -1,0 +1,338 @@
+/* Cài đặt cơ bản */
+* {
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    width: 1200px;
+    background-color: #fff;
+    color: #333;
+}
+
+/* Thanh điều hướng */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 1rem 2rem;
+    color: #fff;
+}
+.navbar .logo {
+    border-radius: 5px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li {
+    margin-left: 1rem;
+}
+
+.navbar ul li a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar ul li a:hover {
+    text-decoration: underline;
+}
+
+.search-bar {
+    display: flex;
+}
+
+.search-bar input {
+    padding: 0.5rem;
+    border: 1px solid grey;
+    border-radius: 4px 0 0 4px;
+}
+
+.search-bar button {
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: #0073e6;
+    color: #fff;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+/* Banner */
+.banner {
+    text-align: center;
+    background-color: #0073e6;
+    color: #fff;
+    padding: 3rem 1rem;
+}
+
+.banner h2 {
+    font-size: 2.5rem;
+}
+
+.banner p {
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.banner .cta-button {
+    background-color: #fff;
+    color: #0073e6;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.banner .cta-button:hover {
+    background-color: #005bb5;
+}
+
+/* Bộ lọc sản phẩm */
+.filters {
+    padding: 1rem 2rem;
+    background-color: #f8f8f8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.filter-options {
+    display: flex;
+    gap: 1rem;
+}
+
+.filter-options select {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Danh sách sản phẩm */
+.product-list {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.product-list h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.products-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.product {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 250px;
+    padding: 1rem;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+.product img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.product h3 {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+.product p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.product button {
+    background-color: #0073e6;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.product button:hover {
+    background-color: #005bb5;
+}
+
+/* Phân trang */
+.pagination {
+    width: 100px;
+    margin-top: 1rem;
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+.pagination button {
+    padding: 0.5rem 1rem;
+    background-color: #0073e6;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.pagination button:hover {
+    background-color: #005bb5;
+}
+
+
+/* Tin tức */
+.news-section {
+    padding: 2rem 1rem;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.news-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.news-articles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  /* 3 bài viết mỗi hàng */
+    gap: 1.5rem;
+}
+
+.news-article {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.news-article:hover {
+    transform: scale(1.05);
+}
+
+.news-article img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.news-article h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.news-article p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.news-article button {
+    background-color: #0073e6;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.news-article button:hover {
+    background-color: #005bb5;
+}
+
+/* Phần Đăng ký */
+.signup-section {
+    position: fixed;  /* Đặt phần đăng ký cố định ở bên phải màn hình */
+    top: 50%;  /* Canh giữa theo chiều dọc */
+    right: 0;
+    transform: translateY(-50%);  /* Đưa phần đăng ký vào giữa màn hình */
+    background-color: #fff;
+    padding: 2rem;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 300px;
+}
+
+.signup-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.signup-container h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.input-group {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.input-group label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 0.3rem;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #0073e6;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #005bb5;
+}
+
+/* Phần chân trang */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #333;
+    color: #fff;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem 0;
+}
+
+.footer-content div {
+    max-width: 300px;
+}
