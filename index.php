@@ -6,8 +6,27 @@ require_once __DIR__ . "/models/Product.php";
 
 require_once __DIR__ . "/controllers/HomeController.php";
 require_once __DIR__ . "/controllers/ClientCategoryController.php";
+include "views/header.php";?>
+
+    <!-- Banner -->
+        
+    <img id="img1" src="img/0.jpg" width="100%" height="500px" alt="">
+    <script src="slide.js"></script>
+
+    <!-- Bộ lọc sản phẩm -->
+<?
+include "views/home.php";
+include "views/footer.php";
 
 $ctl = $_GET['ctl'] ?? '';
+
+
+
+
+
+
+
+
 
 
 

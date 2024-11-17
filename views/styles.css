@@ -336,3 +336,10 @@ footer {
 .footer-content div {
     max-width: 300px;
 }
+a{
+    color: #0073e6;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}

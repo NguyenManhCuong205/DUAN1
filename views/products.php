@@ -1,37 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chi tiết sản phẩm - Lenovo IdeaPad Slim 5</title>
-    <link rel="stylesheet" href="products.css">
-    <link rel="stylesheet" href="products.js">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-</head>
-<body>
-    <!-- Thanh điều hướng -->
-    <header>
-        <div class="navbar">
-            <img class="logo" src="img/images.png" width="150px" height="50px" alt="">
-            <nav>
-                <ul>
-                    <li><a href="index.html">Trang chủ</a></li>
-                    <li><a href="products.html">Sản phẩm</a></li>
-                    <li><a href="#contact">Liên hệ</a></li>
-                    <li><a href="#account">Tài khoản</a></li>
-                </ul>
-            </nav>
-            <div class="search-bar">
-                <input type="text" placeholder="Tìm kiếm sản phẩm...">
-                <button>Tìm kiếm</button>
-            </div>
-            <a href="cart.html" class="cart-icon">
-                <i class="fas fa-shopping-cart"></i>
-                <span class="cart-count">0</span>
-            </a>
-        </div>
-    </header>
+<?php
+include "header.php";
+?>
 
+<link rel="stylesheet" href="products.css">
     <!-- Chi tiết sản phẩm -->
     <section class="product-details">
         <div class="product-image">
