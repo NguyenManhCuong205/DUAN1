@@ -32,7 +32,7 @@ include "header.php";
         
     </section>
     
-
+<!--demo-->
     <!-- Đánh giá và bình luận -->
     <section class="reviews">
         <h2>Đánh giá từ khách hàng</h2>
