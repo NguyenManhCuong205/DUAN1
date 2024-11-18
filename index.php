@@ -12,8 +12,6 @@ include "views/banner.php";
 include "views/home.php";
 include "views/footer.php"; 
 
-
-
 $ctl = $_GET['ctl'] ?? '';
 
 $data = [
