@@ -18,8 +18,8 @@
             <nav>
                 <ul>
                     <li><a href="../index.php">Trang chủ</a></li>
-                    <li><a href="#products">Danh mục</a></li>
-                    <li><a href="#products">Sản phẩm</a></li>
+                    <li><a href="">Danh mục</a></li>
+                    <li><a href="./home.php">Sản phẩm</a></li>
                     <li><a href="#contact">Liên hệ</a></li>
                     <li><a href="#account">Tài khoản</a></li>
                 </ul>

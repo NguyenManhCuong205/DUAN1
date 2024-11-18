@@ -6,54 +6,29 @@ require_once __DIR__ . "/models/Product.php";
 
 require_once __DIR__ . "/controllers/HomeController.php";
 require_once __DIR__ . "/controllers/ClientCategoryController.php";
-include "views/header.php";?>
 
-    <!-- Banner -->
-        
-    <img id="img1" src="img/0.jpg" width="100%" height="500px" alt="">
-    <script src="slide.js"></script>
-
-    <!-- Bộ lọc sản phẩm -->
-<?
+include "views/header.php";
+include "views/banner.php";
 include "views/home.php";
-include "views/footer.php";
+include "views/footer.php"; 
+
+
 
 $ctl = $_GET['ctl'] ?? '';
 
-
-
-
-
-
-
-
-
-
-
-    // insert
-    // $data=[
-    //     'cate_name'=>'hổ',
-    //     'type'=>1
-    // ];
-    // $cate=new Category;
-    // $cate->delete(3);
-    
-    
-    // var_dump($cate->show(1));
-
-    $data=[
-        'name'=>'thức ăn cho chó',
-        'image'=>'',
-        'price'=>50000,
-        'quantity'=>10,
-        'description'=>'thức ăn cho chó',
-        'category_id'=>1
-    ];
-    $product=new Product;
-    $product-> create($data);
+$data = [
+    'name' => 'thức ăn cho chó',
+    'image' => '',
+    'price' => 50000,
+    'quantity' => 10,
+    'description' => 'thức ăn cho chó',
+    'category_id' => 1
+];
+$product = new Product;
+$product->create($data);
 
 match ($ctl) {
     '', 'home' => (new HomeController)->index(),
     'category' => (new ClientCategoryController)->index(),
     default => view("404.404"),
-};
+};?>

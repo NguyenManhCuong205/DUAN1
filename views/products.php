@@ -6,7 +6,7 @@ include "header.php";
     <!-- Chi tiết sản phẩm -->
     <section class="product-details">
         <div class="product-image">
-            <img src="img/sp1.webp" alt="Lenovo IdeaPad Slim 5">
+            <img src="img/68889a97-51bc-4602-9b45-fd5484b4c325.jpg" alt="Lenovo IdeaPad Slim 5">
         </div>
         <div class="product-info">
             <h1>Lenovo IdeaPad Slim 5 14Q8X9 83HL000KVN</h1>
